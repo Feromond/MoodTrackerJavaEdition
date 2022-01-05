@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PreviousMoodEntriesViewController">
+   <children>
+      <VBox prefHeight="600.0" prefWidth="800.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="89.0" prefWidth="313.0">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="82.0" prefWidth="800.0" spacing="15.0">
+                     <children>
+                        <Label text="Previous Mood Entries" underline="true">
+                           <font>
+                              <Font name="System Bold Italic" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="currentEntryDateLabel" text="Date" textAlignment="CENTER" underline="true" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+            <HBox alignment="CENTER_RIGHT" prefHeight="58.0" prefWidth="800.0" spacing="180.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="63.0" prefWidth="205.0" spacing="10.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#previousOldLogButtonPressed" prefHeight="25.0" prefWidth="94.0" text="&lt;&lt; Prev. Entry" />
+                        <Button mnemonicParsing="false" onAction="#nextOldLogButtonPressed" prefHeight="25.0" prefWidth="95.0" text="Next Entry &gt;&gt;" />
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="523.0" prefWidth="800.0">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="512.0" prefWidth="395.0">
+                     <children>
+                        <VBox alignment="TOP_CENTER" prefHeight="113.0" prefWidth="391.0" spacing="10.0">
+                           <children>
+                              <Label text="Overall Mood" underline="true">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="currentOverallMoodLabel" text="Label" wrapText="true">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER" prefHeight="122.0" prefWidth="391.0" spacing="10.0">
+                           <children>
+                              <Label text="Social Mood" underline="true">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="currentSocialMoodLabel" text="Label" wrapText="true">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER" prefHeight="113.0" prefWidth="391.0" spacing="10.0">
+                           <children>
+                              <Label text="Introspective Mood" underline="true">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="currentIntrospectiveMoodLabel" text="Label" wrapText="true">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="512.0" prefWidth="414.0">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="38.0" prefWidth="400.0">
+                           <children>
+                              <Label text="Journal Entry" underline="true">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <TextArea fx:id="currentJournalEntryTextArea" editable="false" prefHeight="418.0" prefWidth="400.0" style="-fx-border-style: solid;" text="Journal entry goes here" wrapText="true">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </TextArea>
+                        <HBox alignment="CENTER_RIGHT" prefHeight="40.0" prefWidth="400.0">
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#quitMoodLoggerButtonPushed" text="Quit MoodLogger" />
+                           </children>
+                        </HBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" right="10.0" />
+                     </padding>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

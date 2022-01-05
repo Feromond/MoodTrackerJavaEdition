@@ -1,4 +1,4 @@
-MoodTracker Final Submission 	- Jacob Mish (30067029)
+MoodTracker Final Submission 	- Jacob Mish
 
 The development enviornment for this project was Intellij for my Java coding, and Scenebuilder for creating my GUI. The project source code files are all stored together without any package, in a src file. 
 

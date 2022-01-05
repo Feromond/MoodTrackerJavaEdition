@@ -1,0 +1,24 @@
+DATE:
+2021-04-08
+Jacob
+8.0
+MOOD CHOICES:
+          VARIANT:'Overall',  DESCRIPTION OF CHOICE:'Pretty Good', SCORE :'6'
+          VARIANT:'Socially',  DESCRIPTION OF CHOICE:'Okay with Seeing Anyone', SCORE :'3'
+          VARIANT:'Introspectively',  DESCRIPTION OF CHOICE:'Fine with myself', SCORE :'3'
+JOURNAL ENTRY:
+          'This works all good!'
+-------------------------------------------------------------------------------
+
+
+DATE:
+2021-04-08
+Jacob
+5.0
+MOOD CHOICES:
+          VARIANT:'Overall',  DESCRIPTION OF CHOICE:'Neutral', SCORE :'4'
+          VARIANT:'Socially',  DESCRIPTION OF CHOICE:'Be with one Close Person', SCORE :'2'
+          VARIANT:'Introspectively',  DESCRIPTION OF CHOICE:'Content with myself', SCORE :'4'
+JOURNAL ENTRY:
+          'Test 2'
+-------------------------------------------------------------------------------

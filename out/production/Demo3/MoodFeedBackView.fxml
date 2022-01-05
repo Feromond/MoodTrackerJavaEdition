@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MoodFeedbackViewController">
+   <children>
+      <Label layoutX="347.0" layoutY="14.0" text="Feedback" textAlignment="CENTER" underline="true">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font></Label>
+      <VBox alignment="CENTER" layoutX="38.0" layoutY="63.0" prefHeight="524.0" prefWidth="373.0" style="-fx-border-style: solid;">
+         <children>
+            <VBox alignment="CENTER" prefHeight="101.0" prefWidth="371.0" spacing="10.0">
+               <children>
+                  <Label text="Based on your Mood Score:" underline="true">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="moodScoreFeedbackLabel" alignment="TOP_LEFT" prefHeight="58.0" prefWidth="347.0" text="Label" wrapText="true">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Label>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="138.0" prefWidth="371.0" spacing="10.0">
+               <children>
+                  <Label text="Based on your Overall Mood:" underline="true">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="variantOneFeedbackLabel" alignment="TOP_LEFT" prefHeight="66.0" prefWidth="347.0" text="Label" wrapText="true">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Label>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="121.0" prefWidth="371.0" spacing="10.0">
+               <children>
+                  <Label text="Based on your Social Mood:" underline="true">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="variantTwoFeedbackLabel" alignment="TOP_LEFT" prefHeight="86.0" prefWidth="344.0" text="Label" wrapText="true">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Label>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="123.0" prefWidth="371.0" spacing="10.0">
+               <children>
+                  <Label prefHeight="18.0" prefWidth="264.0" text="Based on your Introspective Mood:" underline="true">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="variantThreeFeedbackLabel" alignment="TOP_LEFT" prefHeight="88.0" prefWidth="348.0" text="Label" wrapText="true">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Label>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+      <HBox alignment="CENTER" layoutX="559.0" layoutY="561.0" prefHeight="30.0" prefWidth="234.0" spacing="50.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#continueButtonPushed" text="Continue &gt;&gt;">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <VBox alignment="CENTER_LEFT" layoutX="426.0" layoutY="151.0" prefHeight="349.0" prefWidth="320.0" spacing="40.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="124.0" prefWidth="320.0" spacing="1.0">
+               <children>
+                  <Hyperlink fx:id="randomDogVideoHyperlink" prefHeight="97.0" prefWidth="320.0" text="Hyperlink" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Hyperlink>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="125.0" prefWidth="344.0" spacing="1.0">
+               <children>
+                  <Hyperlink fx:id="randomMovieHyperlink" prefHeight="120.0" prefWidth="320.0" text="Hyperlink" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Hyperlink>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

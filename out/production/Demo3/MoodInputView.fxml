@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MoodInputViewController">
+   <children>
+      <Label contentDisplay="CENTER" layoutX="295.0" layoutY="14.0" text="Record Your Mood" textAlignment="CENTER" underline="true">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <VBox alignment="CENTER" layoutX="14.0" layoutY="49.0" prefHeight="127.0" prefWidth="267.0">
+         <children>
+            <Label prefHeight="45.0" prefWidth="267.0" text="How would you scale your overall mood from 1-10? (1 being very poor, 10 being very good)" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <HBox alignment="CENTER" prefHeight="55.0" prefWidth="267.0" spacing="10.0">
+               <children>
+                  <ChoiceBox fx:id="moodScoreIntChoiceBox" prefHeight="25.0" prefWidth="95.0" />
+                  <Button mnemonicParsing="false" onAction="#moodScoreIntSelectedButtonPushed" prefHeight="25.0" prefWidth="43.0" text="Save" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox layoutX="443.0" layoutY="78.0" prefHeight="517.0" prefWidth="343.0" spacing="5.0">
+         <children>
+            <Label text="Write a brief entry about how you're feeling today" underline="true">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="journalEntryTextArea" prefHeight="411.0" prefWidth="343.0" promptText="You can enter your Jounal Entry here" wrapText="true" />
+            <VBox alignment="TOP_RIGHT" prefHeight="27.0" prefWidth="343.0">
+               <children>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="25.0" prefWidth="343.0" spacing="10.0">
+                     <children>
+                        <Label fx:id="unsavedJournalEntryLabel" alignment="CENTER_RIGHT" prefHeight="17.0" prefWidth="106.0" textFill="RED" underline="true">
+                           <font>
+                              <Font name="System Italic" size="12.0" />
+                           </font>
+                        </Label>
+                        <Button mnemonicParsing="false" onAction="#saveJournalEntryButtonPushed" prefHeight="25.0" prefWidth="91.0" text="Save Journal" textAlignment="CENTER" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox prefHeight="39.0" prefWidth="343.0">
+               <children>
+                  <HBox alignment="BOTTOM_RIGHT" prefHeight="27.0" prefWidth="343.0">
+                     <children>
+                        <Label fx:id="attemptedSaveLogResponseLabel" prefHeight="31.0" prefWidth="106.0" textAlignment="CENTER" textFill="RED" underline="true">
+                           <font>
+                              <Font name="System Italic" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+                     <children>
+                        <Label fx:id="pressToContinueLabel" text="Press to Continue:" textAlignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Button mnemonicParsing="false" onAction="#saveTodayLogButtonPushed" text="Save Todays Log" textAlignment="CENTER" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+      <HBox layoutX="14.0" layoutY="257.0" prefHeight="329.0" prefWidth="313.0">
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="325.0" prefWidth="250.0" spacing="15.0">
+               <children>
+                  <VBox alignment="TOP_CENTER" prefHeight="186.0" prefWidth="250.0">
+                     <children>
+                        <Label fx:id="moodVariantOne" alignment="CENTER" prefHeight="35.0" prefWidth="322.0" text="Mood Question 1" textAlignment="CENTER" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <ChoiceBox fx:id="moodVariantOneChoiceBox" prefHeight="25.0" prefWidth="213.0" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER" prefHeight="183.0" prefWidth="262.0">
+                     <children>
+                        <Label fx:id="moodVariantTwo" alignment="CENTER" prefHeight="34.0" prefWidth="322.0" text="Mood Question 2" textAlignment="CENTER" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <ChoiceBox fx:id="moodVariantTwoChoiceBox" prefHeight="25.0" prefWidth="213.0" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER" prefHeight="179.0" prefWidth="267.0">
+                     <children>
+                        <Label fx:id="moodVariantThree" alignment="CENTER" prefHeight="33.0" prefWidth="322.0" text="Mood Question 3" textAlignment="CENTER" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <ChoiceBox fx:id="moodVariantThreeChoiceBox" prefHeight="25.0" prefWidth="213.0" />
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER_LEFT" prefHeight="325.0" prefWidth="54.0" spacing="90.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#moodVariantOneSaveButtonPressed" text="Save" />
+                  <Button mnemonicParsing="false" onAction="#moodVariantTwoSaveButtonPressed" text="Save" />
+                  <Button mnemonicParsing="false" onAction="#moodVariantThreeSaveButtonPressed" text="Save" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <Label fx:id="unsavedMoodScoreLabel" layoutX="242.0" layoutY="128.0" prefHeight="17.0" prefWidth="106.0" textFill="RED" underline="true">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="unsavedMoodVariantOneLabel" layoutX="314.0" layoutY="300.0" prefHeight="17.0" prefWidth="106.0" textFill="RED" underline="true">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="unsavedMoodVariantTwoLabel" layoutX="314.0" layoutY="413.0" prefHeight="17.0" prefWidth="106.0" textFill="RED" underline="true">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="unsavedMoodVariantThreeLabel" layoutX="314.0" layoutY="530.0" prefHeight="17.0" prefWidth="106.0" textFill="RED" underline="true">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
